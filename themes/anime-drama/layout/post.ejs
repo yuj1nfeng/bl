@@ -1,0 +1,113 @@
+<%- partial('_partial/header') %>
+
+<article class="article-container" itemscope itemtype="https://schema.org/BlogPosting">
+  <header class="article-header">
+    <% if (page.categories && page.categories.length > 0 && page.categories.first) { %>
+    <div class="article-category">
+      <i class="fas fa-folder"></i>
+      <%= page.categories.first.name %>
+    </div>
+    <% } %>
+    
+    <h1 class="article-title" itemprop="headline">
+      <%= page.title %>
+    </h1>
+    
+    <div class="article-meta">
+      <div class="article-meta-item">
+        <i class="far fa-calendar"></i>
+        <time datetime="<%= page.date.toISOString() %>" itemprop="datePublished">
+          <%= date(page.date, 'YYYY 年 MM 月 DD 日') %>
+        </time>
+      </div>
+      
+      <% if (page.updated) { %>
+      <div class="article-meta-item">
+        <i class="fas fa-sync-alt"></i>
+        <span>更新于 <%= date(page.updated, 'YYYY 年 MM 月 DD 日') %></span>
+      </div>
+      <% } %>
+      
+      <div class="article-meta-item">
+        <i class="far fa-eye"></i>
+        <span>阅读 <span id="view-count">加载中...</span></span>
+      </div>
+      
+      <% if (page.tags && page.tags.length) { %>
+      <div class="article-meta-item">
+        <i class="fas fa-tags"></i>
+        <span><%= page.tags.length %> 标签</span>
+      </div>
+      <% } %>
+    </div>
+  </header>
+  
+  <% if (page.cover || page.thumbnail) { %>
+  <div class="article-cover">
+    <img src="<%= page.cover || page.thumbnail %>" alt="<%= page.title %>" itemprop="image">
+  </div>
+  <% } %>
+  
+  <div class="article-content" itemprop="articleBody">
+    <%- page.content %>
+  </div>
+  
+  <% if (page.tags && page.tags.length) { %>
+  <div class="article-tags">
+    <span class="article-tag-label">
+      <i class="fas fa-tags"></i>
+      标签：
+    </span>
+    <% page.tags.forEach(function(tag) { %>
+    <a href="<%= url_for(tag.path) %>" class="article-tag">
+      <i class="fas fa-tag"></i>
+      <%= tag.name %>
+    </a>
+    <% }) %>
+  </div>
+  <% } %>
+  
+  <!-- Article Navigation -->
+  <nav class="article-nav">
+    <% if (page.prev) { %>
+    <a href="<%= url_for(page.prev.path) %>" class="article-nav-link article-nav-prev">
+      <span class="nav-direction">
+        <i class="fas fa-arrow-left"></i>
+        上一篇
+      </span>
+      <span class="nav-title"><%= page.prev.title %></span>
+    </a>
+    <% } %>
+    
+    <% if (page.next) { %>
+    <a href="<%= url_for(page.next.path) %>" class="article-nav-link article-nav-next">
+      <span class="nav-direction">
+        下一篇
+        <i class="fas fa-arrow-right"></i>
+      </span>
+      <span class="nav-title"><%= page.next.title %></span>
+    </a>
+    <% } %>
+  </nav>
+  
+  <!-- Comments Section -->
+  <div class="comments-section" id="comments">
+    <% if (theme.disqus_shortname) { %>
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = '<%= page.permalink %>';
+        this.page.identifier = '<%= page.path %>';
+      };
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://<%= theme.disqus_shortname %>.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <% } %>
+  </div>
+</article>
+
+<%- partial('_partial/footer') %>

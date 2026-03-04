@@ -1,0 +1,61 @@
+<%- partial('_partial/header') %>
+
+<div class="archive-container">
+  <div class="section-header">
+    <h2 class="section-title">
+      <i class="fas fa-archive"></i>
+      文章归档
+    </h2>
+    <p class="section-subtitle">按时间顺序浏览所有漫剧创作内容</p>
+  </div>
+  
+  <% 
+  var posts = site.posts.sort('-date');
+  var currentYear = '';
+  posts.forEach(function(post) {
+    var year = date(post.date, 'YYYY');
+    if (year !== currentYear) {
+      if (currentYear !== '') {
+  %>
+      </ul>
+    </div>
+  <%
+      }
+      currentYear = year;
+  %>
+  <div class="archive-group">
+    <h3 class="archive-year">
+      <%= year %>
+    </h3>
+    <ul class="archive-list">
+  <%
+    }
+  %>
+      <li class="archive-item">
+        <a href="<%= url_for(post.path) %>">
+          <span class="archive-item-date">
+            <%= date(post.date, 'MM-DD') %>
+          </span>
+          <span class="archive-item-title">
+            <%= post.title %>
+          </span>
+          <% if (post.categories && post.categories.length > 0 && post.categories.first) { %>
+          <span class="archive-item-category">
+            <i class="fas fa-folder"></i>
+            <%= post.categories.first.name %>
+          </span>
+          <% } %>
+        </a>
+      </li>
+  <%
+  });
+  if (currentYear !== '') {
+  %>
+      </ul>
+    </div>
+  <%
+  }
+  %>
+</div>
+
+<%- partial('_partial/footer') %>

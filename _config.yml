@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: 幻域漫剧
+subtitle: 创意无限 · 漫剧制作工作室
+description: 专注漫剧创作，分享制作技巧、创作心得与行业动态。用创意和热情打造每一个触动人心的视觉故事。
+keywords: 漫剧，动画制作，二次元，创作教程，分镜设计，角色设计，后期特效，剧本创作
+author: 幻域工作室
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://your-domain.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -61,13 +61,24 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 12
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
+default_category: 创作教程
 category_map:
+  创作教程：Tutorials
+  制作技巧：Tips
+  行业资讯：News
+  作品展示：Works
+  创作随笔：Thoughts
 tag_map:
+  剧本：screenplay
+  分镜：storyboard
+  角色设计：character-design
+  动画：animation
+  后期：post-production
+  音效：audio
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
@@ -96,7 +107,11 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: anime-drama
+
+# Theme Configuration
+fancybox: true
+disqus_shortname: ''
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

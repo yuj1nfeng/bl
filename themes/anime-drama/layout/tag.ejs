@@ -1,0 +1,66 @@
+<%- partial('_partial/header') %>
+
+<div class="archive-container">
+  <div class="section-header">
+    <h2 class="section-title">
+      <i class="fas fa-tags"></i>
+      标签：<%= page.name %>
+    </h2>
+    <p class="section-subtitle">该标签下共有 <%= page.posts.length %> 篇文章</p>
+  </div>
+  
+  <div class="posts-grid">
+    <% page.posts.forEach(function(post) { %>
+    <article class="post-card" itemscope itemtype="https://schema.org/BlogPosting">
+      <a href="<%= url_for(post.path) %>" class="post-card-link">
+        <div class="post-card-image">
+          <% if (post.cover) { %>
+          <img src="<%= post.cover %>" alt="<%= post.title %>" itemprop="image">
+          <% } else if (post.thumbnail) { %>
+          <img src="<%= post.thumbnail %>" alt="<%= post.title %>" itemprop="image">
+          <% } else { %>
+          <img src="/images/default-cover.svg" alt="<%= post.title %>" itemprop="image">
+          <% } %>
+          <div class="post-card-overlay"></div>
+          <% if (post.categories && post.categories.length > 0 && post.categories.first) { %>
+          <span class="post-card-badge">
+            <%= post.categories.first.name %>
+          </span>
+          <% } %>
+        </div>
+        
+        <div class="post-card-content">
+          <div class="post-card-meta">
+            <span>
+              <i class="far fa-calendar"></i>
+              <time datetime="<%= post.date.toISOString() %>">
+                <%= date(post.date, 'YYYY-MM-DD') %>
+              </time>
+            </span>
+          </div>
+          
+          <h3 class="post-card-title" itemprop="name">
+            <%= post.title %>
+          </h3>
+          
+          <p class="post-card-excerpt" itemprop="description">
+            <% if (post.description) { %>
+              <%= post.description %>
+            <% } else { %>
+              <%= strip_html(post.excerpt || post.content).substring(0, 120) %>...
+            <% } %>
+          </p>
+        </div>
+        
+        <div class="post-card-footer">
+          <span class="post-card-readmore">
+            阅读全文 <i class="fas fa-arrow-right"></i>
+          </span>
+        </div>
+      </a>
+    </article>
+    <% }) %>
+  </div>
+</div>
+
+<%- partial('_partial/footer') %>

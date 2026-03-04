@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="<%= page.lang || 'zh-CN' %>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <% if (config.meta_generator !== false) { %>
+  <meta name="generator" content="Hexo <%= config.version %>">
+  <% } %>
+  
+  <% if (page.description) { %>
+  <meta name="description" content="<%= page.description %>">
+  <% } else { %>
+  <meta name="description" content="<%= config.description %>">
+  <% } %>
+  
+  <% if (page.keywords) { %>
+  <meta name="keywords" content="<%= page.keywords %>">
+  <% } else if (config.keywords) { %>
+  <meta name="keywords" content="<%= config.keywords %>">
+  <% } %>
+  
+  <title><%= page.title ? page.title + ' - ' + config.title : config.title %></title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="<%= url_for('/css/style.css', theme) %>">
+  
+  <% if (theme.fancybox) { %>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+  <% } %>
+  
+  <%- open_graph() %>
+</head>
+<body>
+  <%- partial('_partial/header') %>
+  
+  <main id="main-container">
+    <%- body %>
+  </main>
+  
+  <%- partial('_partial/footer') %>
+  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+  <script src="<%= url_for('/js/main.js', theme) %>"></script>
+  
+  <% if (theme.fancybox) { %>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    Fancybox.bind('[data-fancybox="gallery"], .article-content img', {
+      animated: true,
+      hideScrollbar: false,
+      Thumbs: { autoStart: false },
+    });
+  </script>
+  <% } %>
+</body>
+</html>
