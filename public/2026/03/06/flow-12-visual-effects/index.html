@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  
+  <meta name="generator" content="Hexo ">
+  
+  
+  
+  <meta name="description" content="视觉特效是漫剧的点睛之笔。学习视觉特效和动态图形设计技巧，提升作品视觉品质。">
+  
+  
+  
+  <meta name="keywords" content="漫剧，动画制作，二次元，创作教程，分镜设计，角色设计，后期特效，剧本创作">
+  
+  
+  <title>[流程 12] 视觉特效与动态图形设计 - 幻域漫剧</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+  
+  <meta name="description" content="视觉特效是漫剧的点睛之笔。学习视觉特效和动态图形设计技巧，提升作品视觉品质。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[流程 12] 视觉特效与动态图形设计">
+<meta property="og:url" content="https://your-domain.com/2026/03/06/flow-12-visual-effects/index.html">
+<meta property="og:site_name" content="幻域漫剧">
+<meta property="og:description" content="视觉特效是漫剧的点睛之笔。学习视觉特效和动态图形设计技巧，提升作品视觉品质。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-03-06T13:00:00.000Z">
+<meta property="article:modified_time" content="2026-03-04T18:40:16.796Z">
+<meta property="article:author" content="幻域工作室">
+<meta property="article:tag" content="视觉特效，动态图形，AE 特效">
+<meta name="twitter:card" content="summary">
+</head>
+<body>
+  <header class="site-header">
+  <div class="header-bg-overlay"></div>
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="/" class="navbar-brand">
+        <span class="brand-icon">
+          <i class="fas fa-film"></i>
+        </span>
+        <span class="brand-text">幻域漫剧</span>
+      </a>
+      
+      <div class="navbar-menu" id="navbar-menu">
+        <div class="navbar-links">
+          <a href="/" class="nav-link ">
+            <i class="fas fa-home"></i>
+            <span>首页</span>
+          </a>
+          <a href="/archives" class="nav-link ">
+            <i class="fas fa-archive"></i>
+            <span>归档</span>
+          </a>
+          <a href="/categories" class="nav-link ">
+            <i class="fas fa-folder"></i>
+            <span>分类</span>
+          </a>
+          <a href="/tags" class="nav-link ">
+            <i class="fas fa-tags"></i>
+            <span>标签</span>
+          </a>
+          <a href="/about" class="nav-link">
+            <i class="fas fa-user-astronaut"></i>
+            <span>关于</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  
+</header>
+
+  
+  <main id="main-container">
+    <header class="site-header">
+  <div class="header-bg-overlay"></div>
+  
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="/" class="navbar-brand">
+        <span class="brand-icon">
+          <i class="fas fa-film"></i>
+        </span>
+        <span class="brand-text">幻域漫剧</span>
+      </a>
+      
+      <div class="navbar-menu" id="navbar-menu">
+        <div class="navbar-links">
+          <a href="/" class="nav-link ">
+            <i class="fas fa-home"></i>
+            <span>首页</span>
+          </a>
+          <a href="/archives" class="nav-link ">
+            <i class="fas fa-archive"></i>
+            <span>归档</span>
+          </a>
+          <a href="/categories" class="nav-link ">
+            <i class="fas fa-folder"></i>
+            <span>分类</span>
+          </a>
+          <a href="/tags" class="nav-link ">
+            <i class="fas fa-tags"></i>
+            <span>标签</span>
+          </a>
+          <a href="/about" class="nav-link">
+            <i class="fas fa-user-astronaut"></i>
+            <span>关于</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="navbar-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  
+</header>
+
+
+<article class="article-container" itemscope itemtype="https://schema.org/BlogPosting">
+  <header class="article-header">
+    
+    <div class="article-category">
+      <i class="fas fa-folder"></i>
+      first
+    </div>
+    
+    
+    <h1 class="article-title" itemprop="headline">
+      [流程 12] 视觉特效与动态图形设计
+    </h1>
+    
+    <div class="article-meta">
+      <div class="article-meta-item">
+        <i class="far fa-calendar"></i>
+        <time datetime="2026-03-06T13:00:00.000Z" itemprop="datePublished">
+          2026 年 03 月 06 日
+        </time>
+      </div>
+      
+      
+      <div class="article-meta-item">
+        <i class="fas fa-sync-alt"></i>
+        <span>更新于 2026 年 03 月 05 日</span>
+      </div>
+      
+      
+      <div class="article-meta-item">
+        <i class="far fa-eye"></i>
+        <span>阅读 <span id="view-count">加载中...</span></span>
+      </div>
+      
+      
+      <div class="article-meta-item">
+        <i class="fas fa-tags"></i>
+        <span>1 标签</span>
+      </div>
+      
+    </div>
+  </header>
+  
+  
+  <div class="article-cover">
+    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800" alt="[流程 12] 视觉特效与动态图形设计" itemprop="image">
+  </div>
+  
+  
+  <div class="article-content" itemprop="articleBody">
+    <h2 id="视觉特效的价值"><a href="#视觉特效的价值" class="headerlink" title="视觉特效的价值"></a>视觉特效的价值</h2><blockquote>
+<p>“好的特效是看不见的特效。”</p>
+</blockquote>
+<p>视觉特效在漫剧中的作用：</p>
+<ul>
+<li><strong>增强视觉冲击</strong> - 创造震撼画面</li>
+<li><strong>补充叙事信息</strong> - 用特效讲故事</li>
+<li><strong>营造氛围</strong> - 强化情绪表达</li>
+<li><strong>提升品质感</strong> - 专业特效提升质感</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="一、特效分类"><a href="#一、特效分类" class="headerlink" title="一、特效分类"></a>一、特效分类</h2><h3 id="按功能分类"><a href="#按功能分类" class="headerlink" title="按功能分类"></a>按功能分类</h3><p><strong>1. 增强型特效</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">用途：增强现有画面效果</span><br><span class="line"></span><br><span class="line">示例:</span><br><span class="line">- 光效增强</span><br><span class="line">- 色彩强化</span><br><span class="line">- 粒子效果</span><br><span class="line">- 动态模糊</span><br></pre></td></tr></table></figure>
+
+<p><strong>2. 叙事型特效</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">用途：传递故事信息</span><br><span class="line"></span><br><span class="line">示例:</span><br><span class="line">- 回忆效果</span><br><span class="line">- 幻想场景</span><br><span class="line">- 时间流逝</span><br><span class="line">- 空间转换</span><br></pre></td></tr></table></figure>
+
+<p><strong>3. 装饰型特效</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">用途：美化画面</span><br><span class="line"></span><br><span class="line">示例:</span><br><span class="line">- 光斑光晕</span><br><span class="line">- 动态图形</span><br><span class="line">- 转场效果</span><br><span class="line">- 文字动画</span><br></pre></td></tr></table></figure>
+
+<h3 id="按技术分类"><a href="#按技术分类" class="headerlink" title="按技术分类"></a>按技术分类</h3><p><strong>2D 特效：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 粒子效果</span><br><span class="line">- 光效</span><br><span class="line">- 动态图形</span><br><span class="line">- 文字动画</span><br></pre></td></tr></table></figure>
+
+<p><strong>3D 特效：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 3D 文字</span><br><span class="line">- 3D 图形</span><br><span class="line">- 摄像机运动</span><br><span class="line">- 空间效果</span><br></pre></td></tr></table></figure>
+
+<p><strong>合成特效：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 绿幕抠像</span><br><span class="line">- 跟踪合成</span><br><span class="line">- 擦除修复</span><br><span class="line">- 画面替换</span><br></pre></td></tr></table></figure>
+
+<h2 id="二、常用特效详解"><a href="#二、常用特效详解" class="headerlink" title="二、常用特效详解"></a>二、常用特效详解</h2><h3 id="光效制作"><a href="#光效制作" class="headerlink" title="光效制作"></a>光效制作</h3><p><strong>辉光效果（Glow）</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">用途:</span><br><span class="line">- 发光物体</span><br><span class="line">- 魔法效果</span><br><span class="line">- 梦幻氛围</span><br><span class="line"></span><br><span class="line">参数设置:</span><br><span class="line">- Threshold（阈值）：控制发光范围</span><br><span class="line">- Radius（半径）：控制光晕大小</span><br><span class="line">- Intensity（强度）：控制发光亮度</span><br><span class="line"></span><br><span class="line">软件:</span><br><span class="line">- After Effects Glow</span><br><span class="line">- Optical Flares</span><br></pre></td></tr></table></figure>
+
+<p><strong>镜头光晕（Lens Flare）</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">用途:</span><br><span class="line">- 阳光效果</span><br><span class="line">- 灯光效果</span><br><span class="line">- 科幻感</span><br><span class="line"></span><br><span class="line">类型:</span><br><span class="line">- 自然光晕</span><br><span class="line">- 电影光晕</span><br><span class="line">- 科幻光晕</span><br><span class="line"></span><br><span class="line">要点:</span><br><span class="line">✓ 位置合理（光源方向）</span><br><span class="line">✓ 强度适中</span><br><span class="line">✓ 颜色匹配</span><br></pre></td></tr></table></figure>
+
+<p><strong>光线效果（Light Rays）</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">用途:</span><br><span class="line">- 体积光</span><br><span class="line">- 神圣感</span><br><span class="line">- 氛围营造</span><br><span class="line"></span><br><span class="line">制作:</span><br><span class="line">- God Rays 插件</span><br><span class="line">- 径向模糊</span><br><span class="line">- 粒子光束</span><br></pre></td></tr></table></figure>
+
+<h3 id="粒子效果"><a href="#粒子效果" class="headerlink" title="粒子效果"></a>粒子效果</h3><p><strong>粒子系统基础</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">核心参数:</span><br><span class="line">- Emitter（发射器）：位置、大小</span><br><span class="line">- Particle（粒子）：大小、寿命</span><br><span class="line">- Velocity（速度）：方向、速度</span><br><span class="line">- Physics（物理）：重力、阻力</span><br></pre></td></tr></table></figure>
+
+<p><strong>常见粒子效果</strong></p>
+<p><strong>魔法粒子：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">设置:</span><br><span class="line">- 粒子类型：发光球体</span><br><span class="line">- 颜色：紫色/蓝色</span><br><span class="line">- 运动：螺旋上升</span><br><span class="line">- 寿命：1-2 秒</span><br><span class="line">- 大小：变化</span><br></pre></td></tr></table></figure>
+
+<p><strong>火焰效果：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">设置:</span><br><span class="line">- 粒子类型：火焰</span><br><span class="line">- 颜色：橙红黄渐变</span><br><span class="line">- 运动：向上</span><br><span class="line">- 湍流：中等</span><br><span class="line">- 寿命：0.5-1 秒</span><br></pre></td></tr></table></figure>
+
+<p><strong>烟雾效果：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">设置:</span><br><span class="line">- 粒子类型：烟雾</span><br><span class="line">- 颜色：灰白</span><br><span class="line">- 运动：缓慢上升</span><br><span class="line">- 扩散：大</span><br><span class="line">- 寿命：2-3 秒</span><br></pre></td></tr></table></figure>
+
+<p><strong>雪花&#x2F;雨滴：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">设置:</span><br><span class="line">- 粒子类型：雪花/雨滴</span><br><span class="line">- 颜色：白色/透明</span><br><span class="line">- 运动：向下</span><br><span class="line">- 速度：雪花慢/雨滴快</span><br><span class="line">- 数量：根据场景</span><br></pre></td></tr></table></figure>
+
+<h3 id="动态图形（Motion-Graphics）"><a href="#动态图形（Motion-Graphics）" class="headerlink" title="动态图形（Motion Graphics）"></a>动态图形（Motion Graphics）</h3><p><strong>常见 MG 元素</strong></p>
+<p><strong>转场图形：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">类型:</span><br><span class="line">- 几何图形转场</span><br><span class="line">- 线条转场</span><br><span class="line">- 形状转场</span><br><span class="line"></span><br><span class="line">要点:</span><br><span class="line">✓ 风格统一</span><br><span class="line">✓ 节奏匹配</span><br><span class="line">✓ 不要过度</span><br></pre></td></tr></table></figure>
+
+<p><strong>信息图形：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">类型:</span><br><span class="line">- 数据图表</span><br><span class="line">- 流程图</span><br><span class="line">- 说明图示</span><br><span class="line"></span><br><span class="line">要点:</span><br><span class="line">✓ 信息清晰</span><br><span class="line">✓ 视觉简洁</span><br><span class="line">✓ 动画流畅</span><br></pre></td></tr></table></figure>
+
+<p><strong>装饰图形：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">类型:</span><br><span class="line">- 边框装饰</span><br><span class="line">- 背景图案</span><br><span class="line">- 点缀元素</span><br><span class="line"></span><br><span class="line">要点:</span><br><span class="line">✓ 不抢主体</span><br><span class="line">✓ 风格匹配</span><br><span class="line">✓ 适度使用</span><br></pre></td></tr></table></figure>
+
+<h2 id="三、After-Effects-基础"><a href="#三、After-Effects-基础" class="headerlink" title="三、After Effects 基础"></a>三、After Effects 基础</h2><h3 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h3><p><strong>图层（Layer）</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">图层类型:</span><br><span class="line">- 视频层</span><br><span class="line">- 图片层</span><br><span class="line">- 文字层</span><br><span class="line">- 形状层</span><br><span class="line">- 调整层</span><br><span class="line">- 空对象</span><br><span class="line"></span><br><span class="line">图层顺序:</span><br><span class="line">从上到下叠加</span><br></pre></td></tr></table></figure>
+
+<p><strong>关键帧（Keyframe）</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">关键帧类型:</span><br><span class="line">- 线性关键帧（直线运动）</span><br><span class="line">- 贝塞尔关键帧（曲线运动）</span><br><span class="line">- 定格关键帧（跳变）</span><br><span class="line"></span><br><span class="line">关键帧插值:</span><br><span class="line">- 缓入（Easy Ease In）</span><br><span class="line">- 缓出（Easy Ease Out）</span><br><span class="line">- 自动贝塞尔</span><br></pre></td></tr></table></figure>
+
+<p><strong>预合成（Pre-compose）</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">用途:</span><br><span class="line">- 组织复杂项目</span><br><span class="line">- 重复使用元素</span><br><span class="line">- 独立处理效果</span><br><span class="line"></span><br><span class="line">快捷键:</span><br><span class="line">Ctrl+Shift+C（Win）</span><br><span class="line">Cmd+Shift+C（Mac）</span><br></pre></td></tr></table></figure>
+
+<h3 id="常用效果"><a href="#常用效果" class="headerlink" title="常用效果"></a>常用效果</h3><p><strong>变换效果：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Transform:</span><br><span class="line">- Position（位置）</span><br><span class="line">- Scale（缩放）</span><br><span class="line">- Rotation（旋转）</span><br><span class="line">- Opacity（透明度）</span><br><span class="line">- Anchor Point（锚点）</span><br></pre></td></tr></table></figure>
+
+<p><strong>色彩效果：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Color Correction:</span><br><span class="line">- Curves（曲线）</span><br><span class="line">- Levels（色阶）</span><br><span class="line">- Hue/Saturation（色相/饱和度）</span><br><span class="line">- Color Balance（色彩平衡）</span><br></pre></td></tr></table></figure>
+
+<p><strong>模糊效果：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Blur &amp; Sharpen:</span><br><span class="line">- Gaussian Blur（高斯模糊）</span><br><span class="line">- Directional Blur（方向模糊）</span><br><span class="line">- Radial Blur（径向模糊）</span><br><span class="line">- Camera Lens Blur（镜头模糊）</span><br></pre></td></tr></table></figure>
+
+<p><strong>扭曲效果：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Distort:</span><br><span class="line">- Wave Warp（波浪）</span><br><span class="line">- Turbulent Displace（湍流置换）</span><br><span class="line">- Mesh Warp（网格变形）</span><br><span class="line">- Corner Pin（边角定位）</span><br></pre></td></tr></table></figure>
+
+<h2 id="四、特效制作流程"><a href="#四、特效制作流程" class="headerlink" title="四、特效制作流程"></a>四、特效制作流程</h2><h3 id="标准流程"><a href="#标准流程" class="headerlink" title="标准流程"></a>标准流程</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">需求分析 → 参考收集 → 方案设计 → 制作实现 → 调整优化 → 输出合成</span><br></pre></td></tr></table></figure>
+
+<h3 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h3><p><strong>明确需求：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">□ 特效类型</span><br><span class="line">□ 使用场景</span><br><span class="line">□ 时长要求</span><br><span class="line">□ 风格参考</span><br><span class="line">□ 技术限制</span><br></pre></td></tr></table></figure>
+
+<h3 id="参考收集"><a href="#参考收集" class="headerlink" title="参考收集"></a>参考收集</h3><p><strong>收集方向：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 类似效果参考</span><br><span class="line">- 风格参考</span><br><span class="line">- 色彩参考</span><br><span class="line">- 动态参考</span><br></pre></td></tr></table></figure>
+
+<h3 id="方案设计"><a href="#方案设计" class="headerlink" title="方案设计"></a>方案设计</h3><p><strong>设计内容：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 效果草图</span><br><span class="line">- 动态规划</span><br><span class="line">- 色彩方案</span><br><span class="line">- 技术路线</span><br></pre></td></tr></table></figure>
+
+<h3 id="制作实现"><a href="#制作实现" class="headerlink" title="制作实现"></a>制作实现</h3><p><strong>制作步骤：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. 创建合成</span><br><span class="line">2. 导入素材</span><br><span class="line">3. 制作元素</span><br><span class="line">4. 添加动画</span><br><span class="line">5. 应用效果</span><br><span class="line">6. 调整参数</span><br></pre></td></tr></table></figure>
+
+<h3 id="调整优化"><a href="#调整优化" class="headerlink" title="调整优化"></a>调整优化</h3><p><strong>优化方向：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 节奏调整</span><br><span class="line">- 色彩微调</span><br><span class="line">- 细节完善</span><br><span class="line">- 性能优化</span><br></pre></td></tr></table></figure>
+
+<h2 id="五、特效技巧"><a href="#五、特效技巧" class="headerlink" title="五、特效技巧"></a>五、特效技巧</h2><h3 id="1-层级思维"><a href="#1-层级思维" class="headerlink" title="1. 层级思维"></a>1. 层级思维</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">分层制作:</span><br><span class="line">背景层 → 中间层 → 前景层 → 特效层 → 调整层</span><br><span class="line"></span><br><span class="line">优点:</span><br><span class="line">✓ 便于修改</span><br><span class="line">✓ 独立控制</span><br><span class="line">✓ 性能优化</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-父子关系"><a href="#2-父子关系" class="headerlink" title="2. 父子关系"></a>2. 父子关系</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">父子链接:</span><br><span class="line">父物体运动 → 子物体跟随</span><br><span class="line"></span><br><span class="line">应用:</span><br><span class="line">- 角色配饰</span><br><span class="line">- 机械结构</span><br><span class="line">- 层级动画</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-表达式应用"><a href="#3-表达式应用" class="headerlink" title="3. 表达式应用"></a>3. 表达式应用</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">常用表达式:</span><br><span class="line"></span><br><span class="line">循环动画:</span><br><span class="line">loopOut(&quot;cycle&quot;)</span><br><span class="line"></span><br><span class="line">弹性效果:</span><br><span class="line">n = 0;</span><br><span class="line">if (numKeys &gt; 0)&#123;</span><br><span class="line">  n = nearestKey(time).index;</span><br><span class="line">  if (key(n).time &gt; time)&#123;n--&#125;</span><br><span class="line">&#125;</span><br><span class="line">if (n == 0)&#123;t = 0&#125;else&#123;</span><br><span class="line">  t = time - key(n).time</span><br><span class="line">&#125;</span><br><span class="line">if (n &gt; 0)&#123;</span><br><span class="line">  v = velocityAtTime(key(n).time - thisComp.frameDuration/10);</span><br><span class="line">  value + v*amp*Math.sin(freq*t*2*Math.PI)/Math.exp(decay*t)</span><br><span class="line">&#125;else&#123;value&#125;</span><br><span class="line"></span><br><span class="line">随机效果:</span><br><span class="line">random(最小值，最大值)</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-跟踪技术"><a href="#4-跟踪技术" class="headerlink" title="4. 跟踪技术"></a>4. 跟踪技术</h3><p><strong>位置跟踪：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">用途:</span><br><span class="line">- 文字跟随</span><br><span class="line">- 特效绑定</span><br><span class="line">- 画面替换</span><br><span class="line"></span><br><span class="line">步骤:</span><br><span class="line">1. 选择跟踪点</span><br><span class="line">2. 分析运动</span><br><span class="line">3. 应用跟踪数据</span><br></pre></td></tr></table></figure>
+
+<p><strong>平面跟踪：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">用途:</span><br><span class="line">- 屏幕替换</span><br><span class="line">- 平面合成</span><br><span class="line">- 稳定画面</span><br><span class="line"></span><br><span class="line">工具:</span><br><span class="line">- Mocha AE</span><br><span class="line">- After Effects 跟踪</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-抠像技术"><a href="#5-抠像技术" class="headerlink" title="5. 抠像技术"></a>5. 抠像技术</h3><p><strong>亮度抠像：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">用途:</span><br><span class="line">- 火焰合成</span><br><span class="line">- 光效合成</span><br><span class="line">- 去黑留亮</span><br><span class="line"></span><br><span class="line">工具:</span><br><span class="line">- Screen Matte</span><br><span class="line">- Luma Key</span><br></pre></td></tr></table></figure>
+
+<p><strong>色度抠像：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">用途:</span><br><span class="line">- 绿幕抠像</span><br><span class="line">- 蓝幕抠像</span><br><span class="line"></span><br><span class="line">工具:</span><br><span class="line">- Keylight</span><br><span class="line">- Ultra Key</span><br><span class="line"></span><br><span class="line">要点:</span><br><span class="line">✓ 均匀 lighting</span><br><span class="line">✓ 高质量素材</span><br><span class="line">✓ 边缘处理</span><br></pre></td></tr></table></figure>
+
+<h2 id="六、特效插件推荐"><a href="#六、特效插件推荐" class="headerlink" title="六、特效插件推荐"></a>六、特效插件推荐</h2><h3 id="免费插件"><a href="#免费插件" class="headerlink" title="免费插件"></a>免费插件</h3><table>
+<thead>
+<tr>
+<th>插件</th>
+<th>用途</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Saber</td>
+<td>光效</td>
+<td>Video Copilot</td>
+</tr>
+<tr>
+<td>Deep Glow</td>
+<td>辉光</td>
+<td>Rowbyte</td>
+</tr>
+<tr>
+<td>FX Console</td>
+<td>效果管理</td>
+<td>Video Copilot</td>
+</tr>
+<tr>
+<td>Motion 4</td>
+<td>预设包</td>
+<td>Mt. Mograph</td>
+</tr>
+</tbody></table>
+<h3 id="付费插件"><a href="#付费插件" class="headerlink" title="付费插件"></a>付费插件</h3><table>
+<thead>
+<tr>
+<th>插件</th>
+<th>用途</th>
+<th>价格</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Trapcode Suite</td>
+<td>粒子套装</td>
+<td>$899</td>
+</tr>
+<tr>
+<td>Optical Flares</td>
+<td>光晕</td>
+<td>$295</td>
+</tr>
+<tr>
+<td>Element 3D</td>
+<td>3D 元素</td>
+<td>$195</td>
+</tr>
+<tr>
+<td>Universe</td>
+<td>效果套装</td>
+<td>$199&#x2F;年</td>
+</tr>
+</tbody></table>
+<h2 id="七、性能优化"><a href="#七、性能优化" class="headerlink" title="七、性能优化"></a>七、性能优化</h2><h3 id="优化技巧"><a href="#优化技巧" class="headerlink" title="优化技巧"></a>优化技巧</h3><p><strong>预渲染：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">用途:</span><br><span class="line">- 复杂效果</span><br><span class="line">- 重复使用元素</span><br><span class="line">- 提高预览速度</span><br><span class="line"></span><br><span class="line">方法:</span><br><span class="line">- 预合成</span><br><span class="line">- 代理</span><br><span class="line">- 渲染缓存</span><br></pre></td></tr></table></figure>
+
+<p><strong>图层管理：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">✓ 关闭不需要预览的图层</span><br><span class="line">✓ 使用调整层统一效果</span><br><span class="line">✓ 合理分组预合成</span><br><span class="line">✓ 删除无用图层</span><br></pre></td></tr></table></figure>
+
+<p><strong>合成设置：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">✓ 分辨率适当降低（预览时）</span><br><span class="line">✓ 帧率匹配项目需求</span><br><span class="line">✓ 时长精确设置</span><br><span class="line">✓ 背景色设置透明</span><br></pre></td></tr></table></figure>
+
+<h3 id="渲染设置"><a href="#渲染设置" class="headerlink" title="渲染设置"></a>渲染设置</h3><p><strong>最佳质量：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">格式：QuickTime PNG 或 ProRes 4444</span><br><span class="line">质量：100%</span><br><span class="line">分辨率：完整</span><br><span class="line">帧率：匹配项目</span><br></pre></td></tr></table></figure>
+
+<p><strong>网络输出：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">格式：H.264</span><br><span class="line">码率：根据平台</span><br><span class="line">分辨率：1920x1080</span><br><span class="line">帧率：24/30 fps</span><br></pre></td></tr></table></figure>
+
+<h2 id="八、特效检查清单"><a href="#八、特效检查清单" class="headerlink" title="八、特效检查清单"></a>八、特效检查清单</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">特效检查清单:</span><br><span class="line"></span><br><span class="line">视觉检查:</span><br><span class="line">□ 效果符合需求</span><br><span class="line">□ 风格统一</span><br><span class="line">□ 色彩协调</span><br><span class="line">□ 无瑕疵</span><br><span class="line"></span><br><span class="line">动态检查:</span><br><span class="line">□ 节奏合适</span><br><span class="line">□ 运动流畅</span><br><span class="line">□ 缓入缓出</span><br><span class="line">□ 无卡顿</span><br><span class="line"></span><br><span class="line">技术检查:</span><br><span class="line">□ 分辨率正确</span><br><span class="line">□ 帧率正确</span><br><span class="line">□ 透明通道（如需）</span><br><span class="line">□ 命名规范</span><br><span class="line"></span><br><span class="line">合成检查:</span><br><span class="line">□ 与画面融合</span><br><span class="line">□ 时机准确</span><br><span class="line">□ 音量配合（如有声音）</span><br><span class="line">□ 输出格式正确</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>视觉特效是提升漫剧品质的重要手段。关键要点：</p>
+<ol>
+<li><strong>服务内容</strong> - 特效为叙事服务</li>
+<li><strong>适度原则</strong> - 不要过度使用</li>
+<li><strong>技术扎实</strong> - 掌握核心工具</li>
+<li><strong>审美在线</strong> - 效果要美观</li>
+<li><strong>性能优化</strong> - 兼顾效果与效率</li>
+</ol>
+<hr>
+<p><strong>下一篇</strong>：[流程 13] 色彩校正与画面调色技巧</p>
+
+  </div>
+  
+  
+  <div class="article-tags">
+    <span class="article-tag-label">
+      <i class="fas fa-tags"></i>
+      标签：
+    </span>
+    
+    <a href="/tags/%E8%A7%86%E8%A7%89%E7%89%B9%E6%95%88%EF%BC%8C%E5%8A%A8%E6%80%81%E5%9B%BE%E5%BD%A2%EF%BC%8CAE-%E7%89%B9%E6%95%88/" class="article-tag">
+      <i class="fas fa-tag"></i>
+      视觉特效，动态图形，AE 特效
+    </a>
+    
+  </div>
+  
+  
+  <!-- Article Navigation -->
+  <nav class="article-nav">
+    
+    <a href="/2026/03/06/flow-13-color-grading/" class="article-nav-link article-nav-prev">
+      <span class="nav-direction">
+        <i class="fas fa-arrow-left"></i>
+        上一篇
+      </span>
+      <span class="nav-title">[流程 13] 色彩校正与画面调色技巧</span>
+    </a>
+    
+    
+    
+    <a href="/2026/03/06/flow-11-video-editing/" class="article-nav-link article-nav-next">
+      <span class="nav-direction">
+        下一篇
+        <i class="fas fa-arrow-right"></i>
+      </span>
+      <span class="nav-title">[流程 11] 后期剪辑与节奏把控</span>
+    </a>
+    
+  </nav>
+  
+  <!-- Comments Section -->
+  <div class="comments-section" id="comments">
+    
+  </div>
+</article>
+
+
+  </main>
+  
+  <footer class="site-footer">
+  <div class="footer-bg">
+    <div class="footer-grid-pattern"></div>
+  </div>
+  
+  <div class="container footer-content">
+    <div class="footer-main">
+      <div class="footer-section footer-about">
+        <div class="footer-logo">
+          <i class="fas fa-film"></i>
+          <span>幻域漫剧</span>
+        </div>
+        <p class="footer-description">
+          专注漫剧创作，分享制作技巧与行业洞察
+          <br>
+          用创意和热情打造每一个精彩故事
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Bilibili">
+            <i class="fab fa-bilibili"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Weibo">
+            <i class="fab fa-weibo"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="/atom.xml" class="social-link" aria-label="RSS">
+            <i class="fas fa-rss"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-section footer-links">
+        <h4 class="footer-title">快速链接</h4>
+        <ul class="footer-nav">
+          <li><a href="/"><i class="fas fa-angle-right"></i> 首页</a></li>
+          <li><a href="/archives"><i class="fas fa-angle-right"></i> 归档</a></li>
+          <li><a href="/categories"><i class="fas fa-angle-right"></i> 分类</a></li>
+          <li><a href="/tags"><i class="fas fa-angle-right"></i> 标签</a></li>
+          <li><a href="/about"><i class="fas fa-angle-right"></i> 关于</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section footer-categories">
+        <h4 class="footer-title">分类目录</h4>
+        <ul class="footer-nav">
+          
+          <li>
+            <a href="/categories/创作教程/">
+              <i class="fas fa-folder-open"></i>
+              创作教程
+              <span class="count">(21)</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="/categories/运营教程/">
+              <i class="fas fa-folder-open"></i>
+              运营教程
+              <span class="count">(3)</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="/categories/管理教程/">
+              <i class="fas fa-folder-open"></i>
+              管理教程
+              <span class="count">(6)</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="/categories/制作教程/">
+              <i class="fas fa-folder-open"></i>
+              制作教程
+              <span class="count">(26)</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="/categories/资源推荐/">
+              <i class="fas fa-folder-open"></i>
+              资源推荐
+              <span class="count">(4)</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="/categories/行业洞察/">
+              <i class="fas fa-folder-open"></i>
+              行业洞察
+              <span class="count">(1)</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="/categories/行业资讯/">
+              <i class="fas fa-folder-open"></i>
+              行业资讯
+              <span class="count">(21)</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="/categories/播客制作/">
+              <i class="fas fa-folder-open"></i>
+              播客制作
+              <span class="count">(25)</span>
+            </a>
+          </li>
+          
+          <li>
+            <a href="/categories/制作技巧/">
+              <i class="fas fa-folder-open"></i>
+              制作技巧
+              <span class="count">(11)</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+      <div class="footer-section footer-contact">
+        <h4 class="footer-title">联系方式</h4>
+        <ul class="contact-list">
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span>contact@example.com</span>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>创意园区 · 数字媒体中心</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="copyright">
+        <p>&copy; 2026 幻域漫剧. All rights reserved.</p>
+        <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> | Theme: Anime Drama</p>
+      </div>
+      <div class="footer-extra">
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+  <script src="/js/main.js"></script>
+  
+  
+</body>
+</html>

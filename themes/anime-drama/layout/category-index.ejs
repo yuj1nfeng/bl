@@ -1,0 +1,168 @@
+<nav class="navbar">
+  <div class="container navbar-container">
+    <a href="/" class="navbar-brand">
+      <span class="brand-icon">
+        <i class="fas fa-film"></i>
+      </span>
+      <span class="brand-text"><%= config.title %></span>
+    </a>
+
+    <div class="navbar-menu" id="navbar-menu">
+      <div class="navbar-links">
+        <a href="/" class="nav-link">
+          <i class="fas fa-home"></i>
+          <span>首页</span>
+        </a>
+        <a href="/archives" class="nav-link">
+          <i class="fas fa-archive"></i>
+          <span>归档</span>
+        </a>
+        <a href="/categories" class="nav-link active">
+          <i class="fas fa-folder"></i>
+          <span>分类</span>
+        </a>
+        <a href="/tags" class="nav-link">
+          <i class="fas fa-tags"></i>
+          <span>标签</span>
+        </a>
+        <a href="/about" class="nav-link">
+          <i class="fas fa-user-astronaut"></i>
+          <span>关于</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-bg"></div>
+  <div class="container page-header-content">
+    <h1 class="page-title">
+      <i class="fas fa-folder"></i>
+      全部分类
+    </h1>
+    <p class="page-subtitle">浏览不同主题的内容</p>
+  </div>
+</div>
+
+<div class="categories-container">
+  <div class="categories-grid">
+    <% site.categories.forEach(function(category) { %>
+    <a href="/<%= category.path %>" class="category-card">
+      <div class="category-icon">
+        <i class="fas fa-folder-open"></i>
+      </div>
+      <h3 class="category-name">
+        <%= category.name %>
+      </h3>
+      <span class="category-count">
+        <%= category.length %> 篇文章
+      </span>
+    </a>
+    <% }) %>
+  </div>
+</div>
+
+<style>
+.page-header {
+  position: relative;
+  padding: 120px 0 60px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.page-header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-primary);
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.page-title i {
+  color: var(--color-accent-secondary);
+}
+
+.page-subtitle {
+  color: var(--color-text-secondary);
+  font-size: 1.1rem;
+}
+
+.categories-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--spacing-3xl) var(--spacing-lg);
+  min-height: 40vh;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-2xl);
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-2xl);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-base);
+  text-decoration: none;
+  color: var(--color-text-primary);
+}
+
+.category-card:hover {
+  border-color: var(--color-accent-primary);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-glow);
+}
+
+.category-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-xl);
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: var(--spacing-lg);
+  transition: transform var(--transition-bounce);
+}
+
+.category-card:hover .category-icon {
+  transform: scale(1.1);
+}
+
+.category-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-primary);
+}
+
+.category-count {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+</style>

@@ -3,7 +3,7 @@ title: 2026 年漫剧行业发展趋势报告
 date: 2026-03-02 11:00:00
 categories: 行业资讯
 tags: [行业，趋势，市场]
-cover: https://images.unsplash.com/photo-1536240478700-b869070f9279?w=800
+cover: https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800
 description: 深度解析 2026 年漫剧行业的最新发展趋势，包括技术创新、市场变化和创作方向。
 ---
 

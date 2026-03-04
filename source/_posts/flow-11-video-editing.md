@@ -3,7 +3,7 @@ title: '[流程 11] 后期剪辑与节奏把控'
 date: 2026-03-06 20:00:00
 categories: 创作教程
 tags: [后期剪辑，节奏把控，视频剪辑]
-cover: https://images.unsplash.com/photo-1574717432707-c2571921f767?w=800
+cover: https://images.unsplash.com/photo-1536240478700-b869070f9279?w=800
 description: 剪辑是二次创作。掌握后期剪辑技巧和节奏把控方法，让作品更加精彩。
 ---
 

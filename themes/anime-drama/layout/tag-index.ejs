@@ -1,0 +1,114 @@
+<nav class="navbar">
+  <div class="container navbar-container">
+    <a href="/" class="navbar-brand">
+      <span class="brand-icon">
+        <i class="fas fa-film"></i>
+      </span>
+      <span class="brand-text"><%= config.title %></span>
+    </a>
+
+    <div class="navbar-menu" id="navbar-menu">
+      <div class="navbar-links">
+        <a href="/" class="nav-link">
+          <i class="fas fa-home"></i>
+          <span>首页</span>
+        </a>
+        <a href="/archives" class="nav-link">
+          <i class="fas fa-archive"></i>
+          <span>归档</span>
+        </a>
+        <a href="/categories" class="nav-link">
+          <i class="fas fa-folder"></i>
+          <span>分类</span>
+        </a>
+        <a href="/tags" class="nav-link active">
+          <i class="fas fa-tags"></i>
+          <span>标签</span>
+        </a>
+        <a href="/about" class="nav-link">
+          <i class="fas fa-user-astronaut"></i>
+          <span>关于</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="page-header-bg"></div>
+  <div class="container page-header-content">
+    <h1 class="page-title">
+      <i class="fas fa-tags"></i>
+      全部标签
+    </h1>
+    <p class="page-subtitle">通过标签查找内容</p>
+  </div>
+</div>
+
+<div class="tags-container">
+  <div class="tags-cloud">
+    <% site.tags.forEach(function(tag) { %>
+    <a href="/<%= tag.path %>" class="tag-item" style="--tag-size: <%= Math.max(1, Math.min(3, tag.length / 5)) %>">
+      <span class="tag-name">
+        <%= tag.name %>
+      </span>
+      <span class="tag-count">
+        <%= tag.length %>
+      </span>
+    </a>
+    <% }) %>
+  </div>
+</div>
+
+<style>
+.tags-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--spacing-3xl) var(--spacing-lg);
+  min-height: 40vh;
+}
+
+.tags-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-2xl);
+  justify-content: center;
+}
+
+.tag-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: all var(--transition-base);
+  font-size: calc(0.9rem + (var(--tag-size) - 1) * 0.2rem);
+}
+
+.tag-item:hover {
+  border-color: var(--color-accent-primary);
+  background: var(--color-accent-primary);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.tag-name {
+  font-weight: 500;
+}
+
+.tag-count {
+  background: var(--color-bg-tertiary);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+}
+
+.tag-item:hover .tag-count {
+  background: rgba(255,255,255,0.2);
+}
+</style>

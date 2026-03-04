@@ -50,7 +50,7 @@
         <ul class="footer-nav">
           <% site.categories.forEach(function(category) { %>
           <li>
-            <a href="<%= category.path %>">
+            <a href="/<%= category.path %>">
               <i class="fas fa-folder-open"></i>
               <%= category.name %>
               <span class="count">(<%= category.length %>)</span>
